@@ -1,0 +1,26 @@
+/* Page Formatting */
+body {
+    background: #150543;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+/* Logo Formatting */
+#title {
+    text-shadow: 0 0 8.5px rgba(255, 255, 255, 0.12), 0 0 8.5px rgba(255, 255, 255, 0.12), 0 0 8.5px rgba(255, 255, 255, 0.12), 0 0 8.5px rgba(255, 255, 255, 0.12), 0 0 8.5px rgba(255, 255, 255, 0.12), 0 0 8.5px rgba(255, 255, 255, 0.12), 0 0 8.5px rgba(255, 255, 255, 0.12), 0 0 8.5px rgba(255, 255, 255, 0.12);
+}
+#motto {
+    font-weight: 300;
+    color: #6AFF4D;
+}
+
+/* Button Styling */
+.bubble {
+    background: linear-gradient(90deg, #E82ABE 0%, #22015A 100%);
+    color: #fff;
+    padding: 5px 20px;
+    stroke-width: 1.5px;
+    stroke: #FF23FB;
+    border: none;
+    border-radius: 10px;
+}
