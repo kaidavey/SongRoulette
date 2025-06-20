@@ -11,17 +11,16 @@
 	<h3 id="motto">BATTLE IT OUT WITH FRIENDS</h3>
 </div>
 <div id="content">
-	<h2>Enter Name</h2>
-	<form method="post">
-		<input type="text" name="name" id="name" aria-label="Name" placeholder="Name">
+	<form id="submissionForm" onsubmit="event.preventDefault();">
+		<h2>Enter Name</h2>
+		<input type="text" name="name" id="name" placeholder="Name">
+		<h2>Enter Songs</h2>
+		<input type="text" id="songInput" placeholder="Spotify URL">
+		<button type="button" class="bubble" onclick="addSong()">Upload</button>
+		<div id="songsList"></div>
+		<input type="submit" class="bubble" value="Next" onclick="goToPage()">
 	</form>
-	<h2>Enter Songs</h2>
-	<form method="post">
-		<input type="text" name="song" id="song" aria-label="Song" placeholder="Song">
-		<input type="submit" value="Submit">
-	</form>
-	<div id="songs"></div>
-	<button class="bubble">Next</button>
 </div>
+<script src="js/submit.js"></script>
 </body>
 </html>

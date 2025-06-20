@@ -19,8 +19,7 @@ body {
     background: linear-gradient(90deg, #E82ABE 0%, #22015A 100%);
     color: #fff;
     padding: 5px 20px;
-    stroke-width: 1.5px;
-    stroke: #FF23FB;
-    border: none;
+    border-color: #FF23FB;
+    border-width: 1.5px;
     border-radius: 10px;
 }
