@@ -1,3 +1,4 @@
+//Server Version
 /*
 let songs = [];
 
@@ -32,7 +33,6 @@ async function addSong() {
 
         songs.push(song);
 
-        // Display song info in a nice card
         const list = document.getElementById("songsList");
         const card = document.createElement("div");
         card.className = "song-card";
@@ -52,6 +52,27 @@ async function addSong() {
     }
 }
 */
+
+// Serverless version
+let songs = [];
+
+function addSong() {
+    const input = document.getElementById("songInput");
+    const song = input.value.trim();
+
+    if (song && songs.length < 10) {
+        songs.push(song);
+
+        const list = document.getElementById("songsList");
+        const item = document.createElement("div");
+        item.textContent = `${songs.length}. ${song}`;
+        list.appendChild(item);
+
+        input.value = '';
+    } else if (songs.length >= 10) {
+        alert("You can only submit 10 songs.");
+    }
+}
 
 function goToPage() {
     const name = document.getElementById("name").value.trim();
@@ -74,4 +95,8 @@ function goToPage() {
     } else if (mode === 'join') {
         window.location.href = "join.html";
     }
+}
+
+function goBack() {
+    window.location.href = "index.html";
 }
